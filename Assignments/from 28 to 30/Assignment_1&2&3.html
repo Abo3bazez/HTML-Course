@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Assignment 1</title>
+        <meta cahrset="UTF-8">
+    </head>
+    <body>
+        <h1>Login Page</h1>
+        <form action="Assignment_1.html" method="GET">
+            <div>
+                <input 
+                hidden
+                id="Token" 
+                type="text"
+                value="b92f1fc2fce391ad7af633723afd3055">
+            </div>
+            <div>
+                <label for="user">Username</label>
+                <br>
+                <input 
+                id="user" 
+                type="text" 
+                placeholder="min 5 chars" 
+                minlength="5"
+                maxlength="20"
+                autofocus
+                required>
+            </div>
+            <hr>
+            <div>
+                <label for="mail">Email</label>
+                <br>
+                <input 
+                id="mail" 
+                type="email" 
+                value="o@o.com" 
+                readonly>
+            </div>
+            <hr>
+            <div><h2>Choose Your Skill</h2></div>
+            <div>
+                <input type="checkbox" 
+                id="skill1"
+                name="skills"
+                value="Problem Solving"
+                checked
+                >
+                <label for="skill1">Problem Solving</label>
+            </div>
+            <div>
+                <input type="checkbox" 
+                id="skill2"
+                name="skills"
+                value="Logical Thinking"
+                >
+                <label for="skill2" >Logical Thinking</label>
+            </div>
+            <div>
+                <input type="checkbox" 
+                id="skill3"
+                name="skills"
+                value="Advanced Search"
+                >
+                <label for="skill3">Advanced Search</label>
+            </div>
+            <div>
+                <input type="checkbox" 
+                id="skill4"
+                name="skills"
+                value="Analysis"
+                >
+                <label for="skill4">Analysis</label>
+            </div>
+            <div>
+                <input type="checkbox" 
+                id="skill5"
+                name="skills"
+                value="Planning"
+                >
+                <label for="skill5">Planning</label>
+            </div>
+            <hr>
+            <div><h2>Choose Your Job</h2></div>
+            <div>
+                <input type="radio" 
+                id="job1"
+                name="job"
+                checked
+                >
+                <label for="job1">Front-End Developer</label>
+            </div>
+            <div>
+                <input type="radio" 
+                id="job2"
+                name="job"
+                >
+                <label for="job2">Back-End Developer</label>
+            </div>
+            <div>
+                <input type="radio" 
+                id="job3"
+                name="job"
+                >
+                <label for="job3">Business Analyst</label>
+            </div>
+            <div>
+                <input type="radio" 
+                id="job4"
+                name="job"
+                >
+                <label for="job4">Scrum Master</label>
+            </div>
+            <div>
+                <input type="radio" 
+                id="job5"
+                name="job"
+                >
+                <label for="job5">Problem Solving</label>
+            </div>
+            <hr>
+            <div>
+                <label for="book">Choose Book:</label>
+                <select name="book" id="book">
+                    <optgroup label="PHP">
+                        <option value="PHP-v5.0">v5.0</option>
+                        <option value="PHP-v7.0">v7.0</option>
+                        <option value="PHP-v8.0">v8.0</option>
+                    </optgroup>
+                    <optgroup label="Python">
+                        <option value="Python-v2.0">v2.0</option>
+                        <option value="Python-v3.0">v3.0</option>
+                        <option value="Python-v3.9">v3.9</option>
+                    </optgroup>
+                </select>
+            </div>
+            <hr>
+            <textarea 
+            name="textarea" 
+            id="text" 
+            cols="60" 
+            rows="20"
+            placeholder="Write Here Why You Want To Learn Programming"></textarea>
+            <hr>
+            <input type="submit" value="Send">
+            <input type="reset" value="Empty">
+        </form>
+    </body>
+</html>
